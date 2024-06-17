@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vendas - Achados da Shopee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="input.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="social-media-buttons.css">
+<link rel="stylesheet" href="buybutton.css">
+<link rel="stylesheet" href="instattkyt.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #495057;
+            padding: 10px 0;
+            margin-bottom: -50px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none; 
+        }
+        .section-title {
+            
+            margin: 20px ;
+            font-size: xx-large;
+            
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .cart-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        button{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+
+                @media only screen and (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                width: calc(50% - 20px);
+            }
+        }
+
+    
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px 15px;
+            border: 2px solid #495057;
+            border-radius: 25px 0 0 25px;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border: 2px solid #495057;
+            background-color: #495057;
+            color: white;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #343a40;
+        }
+        
+        #main-title{
+            font-family: 'Danfo';
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+
+        <nav id="apps">
+            <a id="img-icone" href=""><img src="icones/Icone-instagram.png" alt=""></a>
+            <a id="img-icone" href=""><img src="icones/icone-tiktok.png" alt=""></a>
+            <a id="img-icone" href=""><img src="icones/icone-youtubeshorts.png" alt=""></a>
+         </nav>
+
+        <h1 id="main-title"><span>TOP</span>FIND</h1>
+   
+    
+        
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar produtos...">
+            <button class="search-button">Pesquisar</button>
+
+
+
+
+    </header>
+    
+    <nav>
+    
+        <a href="#tech">Tech</a>
+        <a href="#culinaria">Culinária</a>
+        <a href="#esportes">Esportes</a>
+        <a href="#moda">Moda</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#games">Games</a>
+        <a href="#decoracao">Decoração</a>
+    </nav>
+
+    
+        <main id="main-dele">
+            <aside id="aside-dele">
+                <h2 id="h2-dele"><span>DATA</span></h2>
+                <h2 id="h2-dele">FROG</h2>
+                <p id="p-dele">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Comprar</span>
+                    </span>
+                </button>
+                <br>
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Adicionar ao carrinho</span>
+                    </span>
+                </button>
+      
+            </aside>
+    
+            <article id="article-dele">
+                <img id="img-dele" src="images/Controle Data Frog.png" alt="Controle">
+            </article>
+        </main>
+    
+    
+    
+    
+
+            </div>
+            </section>
+            <script>
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+                function addToCart(product, price) {
+                    cart.push({ product, price });
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    
+                }
+               let btn = document.getElementsByTagName("button")
+                function adicionado(){
+                    btn.document.style.background = '#fff'
+                }
+            </script>
+        </body>
+        </html>
