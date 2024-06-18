@@ -104,3 +104,19 @@
     backdrop-filter: blur(4px);
   }
   
+
+  /*NAV BAR GERAL:*/
+  #img-icone > img{
+    width: 39px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#apps{
+    border-radius: 5px;
+    margin-left: 1280px;
+    margin-right: 20px;
+    margin-top: 5px;
+    z-index: 0;
+    
+}
